@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 函数</title>
+</head>
+<body>
+    <script>
+        function Hello(){
+            console.log("Hello,函数");
+        }
+        Hello();
+
+        function hello_with_return(){
+            return "Hello,带有返回值的函数";
+        }
+        let a = hello_with_return();
+        console.log(a);
+
+        function hello_with_params(name){
+            console.log("Hello," + name);
+        }
+        hello_with_params("如花");
+
+        //作用域
+        let = global_variable = "全局变量";
+        function local_variable_function(){
+            let local_variable = "局部变量";
+            console.log(global_variable);
+            console.log(local_variable);
+        }
+    </script>
+</body>
+</html>
